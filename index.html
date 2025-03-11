@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="querey.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm Ohm</h1>
+      <p>Web Developer & Designer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Ohm, a passionate web developer with expertise in building modern, responsive, and user-friendly websites. I specialize in front-end development using HTML, CSS, JavaScript, and frameworks like React. I also have experience with back-end technologies like Node.js and databases like MongoDB.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-card">
+      <h3>HTML</h3>
+      <p>Expert in semantic HTML5 markup.</p>
+    </div>
+    <div class="skill-card">
+      <h3>CSS</h3>
+      <p>Proficient in CSS3, Flexbox, Grid, and animations.</p>
+    </div>
+    <div class="skill-card">
+      <h3>JavaScript</h3>
+      <p>Skilled in vanilla JS and modern frameworks like React.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <img src="nilkscr1.png" alt="Project 1">
+      <div class="content">
+        <h3>Project 1</h3>
+        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="flpscr1.png" alt="Project 2">
+      <div class="content">
+        <h3>Project 2</h3>
+        <p>A React-based web website with a Node.js & JavaScript.</p>
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 Ohm's. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
