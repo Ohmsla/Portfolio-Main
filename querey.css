@@ -1,0 +1,111 @@
+@media (min-width:643px) and (max-width:1440px) {
+    .content .btn{
+      margin-top: 3px;
+    }
+  }
+  /* @media  screen and (max-width:1024px) {
+    .content .btn{
+      margin-top: 3px;
+    }
+  } */
+  @media (min-width:701px) and (max-width:1330px) {
+    .hero h1{
+      font-size: calc(1rem + 3vw);
+    }
+  }
+  @media (max-width: 700px) {
+    footer p {
+      margin: 0;
+    }
+    .hero h1{
+      font-size: calc(1rem + 5vw);
+    }
+  }
+  @media (min-width: 688px) and (max-width: 701px) {
+    .content .btn {
+      margin: 2px;
+    }
+  }
+  @media screen and (max-width:642px) {
+    body{
+      width: 100vw;
+    }
+    .right ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    }
+  
+    .right.active ul {
+      display: flex;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      width: fit-content;
+      padding: 2px 20px;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+  /* @media (max-width: 600px) {
+  } */
+  @media (max-width:599px) {
+    .logo, #contact h2, #projects h2, #skills h2, #about h2{
+      font-size: calc(.7rem + 4vw);
+    }
+    #about p{
+      font-size: clamp(16px, 2vw, 24px);
+    }
+  }
+  @media (max-width: 550px) {
+    .right ul {
+      flex-direction: row;
+    }
+  }
+  @media (max-width: 480px) {
+    .logo {
+      margin-left: 1vw;
+    }
+  }
+  @media screen and (max-width:1440px) {
+    footer{
+      margin-top: calc(.1rem + 2vw);
+    }
+  }
+  @media (max-width:500px) {
+    .right ul{
+      max-width: 90vw;
+      overflow-x: scroll;
+    }
+    .content .btn{
+      margin-top: .3rem;
+    }
+  }
+  
+  @media (max-width:350px) {
+    #top{
+      margin-left: 10px;
+      border: 2px solid rgba(0, 255, 255, 0.3);
+      border-radius: 5px;
+      padding: 2px;
+    }
+  } 
+  @media (max-width:214px) {
+    .btn{
+      padding: .3rem 1rem;
+    }
+  }
+  @media screen and (min-width:335px) {
+    #projects .project-card{
+      margin-right: 5vw;
+      resize: horizontal;
+    }
+  }
+  
